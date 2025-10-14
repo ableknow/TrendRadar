@@ -1,6 +1,6 @@
 app:
   # 将下面的 URL 替换为您自己的 GitHub Pages 地址
-  base_url: "https://joyce677.github.io/TrendRadar"
+  base_url: "https://trendradar.1k2n3sd.acg.rest/"
   version_check_url: "https://raw.githubusercontent.com/sansan0/TrendRadar/refs/heads/master/version"
   show_version_update: true # 控制显示版本更新提示，改成 false 将不接受新版本提示
 
@@ -26,7 +26,7 @@ crawler:
 #   • 适用场景：避免重复信息干扰
 
 report:
-  mode: "daily" # 可选: "daily"|"incremental"|"current"
+  mode: "incremental" # 可选: "daily"|"incremental"|"current"
   rank_threshold: 5 # 排名高亮阈值
 
 notification:
@@ -43,7 +43,7 @@ notification:
       start: "20:00"  # 推送时间范围开始（北京时间）
       end: "22:00"    # 推送时间范围结束（北京时间）
     once_per_day: true  # 每天在时间范围内只推送一次，如果 false，则时间范围内每次执行都推送一次
-    push_record_retention_days: 7  # 推送记录保留天数
+    push_record_retention_days: 1  # 推送记录保留天数
 
   # 请务必妥善保管好 webhooks，不要公开
   # 如果你以 fork 的方式将本项目部署在 GitHub 上，请勿在此填写任何 webhooks，而是将 webhooks 填入 GitHub Secret
